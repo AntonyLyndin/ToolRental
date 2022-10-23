@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New tool</title>
+</head>
+
+<body>
+
+<form th:method="POST" th:action="@{/tools}" th:object="${tool}">
+    <label for="name">Enter name of the tool: </label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <div style="color: darkred" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>
+    <br/>
+
+    <label for="brand">Enter name of the brand: </label>
+    <input type="text" th:field="*{brand}" id="brand"/>
+    <div style="color: darkred" th:if="${#fields.hasErrors('brand')}" th:errors="*{brand}">Name error</div>
+    <br/>
+
+    <label for="price">Enter price: </label>
+    <input type="text" th:field="*{price}" id="price"/>
+    <div style="color: darkred" th:if="${#fields.hasErrors('price')}" th:errors="*{price}">Name error</div>
+    <br/>
+
+    <input type="submit" value="Create!">
+</form>
+
+</body>
+</html>

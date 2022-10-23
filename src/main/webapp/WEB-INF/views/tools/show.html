@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Tool</title>
+</head>
+
+<body>
+<p th:text="${tool.name + ', ' + tool.brand + ', ' + tool.price}">VALUE</p>
+
+<hr/>
+
+<form th:action="@{/tools/{id}/editTool(id=${tool.id})}">
+    <input type="submit" value="Edit"/>
+</form>
+
+<form th:method="DELETE" th:action="@{/tools/{id}/(id=${tool.id})}">
+    <input type="submit" value="Delete"/>
+</form>
+
+</body>
+</html>
