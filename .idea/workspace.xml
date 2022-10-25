@@ -9,20 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="unimportant changes">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/config/MySpringMvcDispatcherSerlvetInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/config/MySpringMvcDispatcherSerlvetInitializer.java" afterDir="false" />
+    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Add JdbcTemplate technology">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties.origin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -188,7 +180,13 @@
       <workItem from="1666541628187" duration="521000" />
       <workItem from="1666553006366" duration="312000" />
       <workItem from="1666553331540" duration="4005000" />
-      <workItem from="1666557422150" duration="6122000" />
+      <workItem from="1666557422150" duration="8093000" />
+      <workItem from="1666638358577" duration="1396000" />
+      <workItem from="1666696807752" duration="679000" />
+      <workItem from="1666700411442" duration="8931000" />
+      <workItem from="1666716986602" duration="7000" />
+      <workItem from="1666720477952" duration="2430000" />
+      <workItem from="1666722943120" duration="2056000" />
     </task>
     <task id="LOCAL-00001" summary="unimportant changes">
       <created>1666596915450</created>
@@ -197,7 +195,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666596915450</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rename paths in controllers">
+      <created>1666597471799</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666597471799</updated>
+    </task>
+    <task id="LOCAL-00003" summary="INIT">
+      <created>1666597542166</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666597542166</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add JdbcTemplate technology">
+      <created>1666706485622</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666706485622</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +235,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unimportant changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="unimportant changes" />
+    <MESSAGE value="rename paths in controllers" />
+    <MESSAGE value="INIT" />
+    <MESSAGE value="Add JdbcTemplate technology" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JdbcTemplate technology" />
   </component>
 </project>
