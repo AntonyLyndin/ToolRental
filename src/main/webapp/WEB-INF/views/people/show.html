@@ -10,11 +10,11 @@
 
 <hr/>
 
-<form th:action="@{/people/{id}/edit(id=${person.id})}">
+<form th:action="@{/people/{id}/edit(id=${person.client_id})}">
     <input type="submit" value="Edit"/>
 </form>
 
-<form th:method="DELETE" th:action="@{/people/{id}(id=${person.id})}">
+<form th:method="DELETE" th:action="@{/people/{id}(id=${person.client_id})}">
     <input type="submit" value="Delete"/>
 </form>
 

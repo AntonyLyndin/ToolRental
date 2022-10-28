@@ -8,7 +8,7 @@
 <body>
 
 <div th:each="tool : ${tools}">
-    <a th:href="@{/tools/{id}(id=${tool.id})}" th:text="${tool.name + ', ' + tool.price}">client</a>
+    <a th:href="@{/tools/{id}(id=${tool.tool_id})}" th:text="${tool.name + ', ' + tool.price}">client</a>
 </div>
 
 <br/>

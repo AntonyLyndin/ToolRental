@@ -10,11 +10,11 @@
 
 <hr/>
 
-<form th:action="@{/tools/{id}/edit(id=${tool.id})}">
+<form th:action="@{/tools/{id}/edit(id=${tool.tool_id})}">
     <input type="submit" value="Edit"/>
 </form>
 
-<form th:method="DELETE" th:action="@{/tools/{id}/(id=${tool.id})}">
+<form th:method="DELETE" th:action="@{/tools/{id}/(id=${tool.tool_id})}">
     <input type="submit" value="Delete"/>
 </form>
 

@@ -5,7 +5,7 @@
     <title>Update tool</title>
 </head>
 <body>
-<form th:method="POST" th:action="@{/tools/{id}(id=${tool.id})}" th:object="${tool}">
+<form th:method="POST" th:action="@{/tools/{id}(id=${tool.tool_id})}" th:object="${tool}">
     <label for="name">Enter name of the tool: </label>
     <input type="text" th:field="*{name}" id="name"/>
     <div style="color: darkred" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error</div>

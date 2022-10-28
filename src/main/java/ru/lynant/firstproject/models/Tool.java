@@ -7,7 +7,7 @@ import javax.validation.constraints.Size;
 
 public class Tool {
 
-    private int id;
+    private int tool_id;
     @Size(min = 1, max = 30, message = "name should be > 1 and < 30 characters")
     @NotEmpty(message = "name should not be empty")
     @Pattern(regexp = "[A-Z][a-z]+", message = "First symbol should be UP register, all other subsequent")
@@ -20,7 +20,7 @@ public class Tool {
     private int price;
 
     public Tool(int id, String name, String brand, int price) {
-        this.id = id;
+        this.tool_id = id;
         this.name = name;
         this.brand = brand;
         this.price = price;
@@ -28,12 +28,12 @@ public class Tool {
 
     public Tool() {}
 
-    public int getId() {
-        return id;
+    public int getTool_id() {
+        return tool_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setTool_id(int tool_id) {
+        this.tool_id = tool_id;
     }
 
     public String getName() {
@@ -59,5 +59,4 @@ public class Tool {
     public void setPrice(int price) {
         this.price = price;
     }
-
 }

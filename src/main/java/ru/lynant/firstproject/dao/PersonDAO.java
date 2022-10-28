@@ -6,8 +6,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 import ru.lynant.firstproject.models.Person;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Component
@@ -25,22 +23,22 @@ public class PersonDAO {
     }
 
     public Person show(int id) {
-        return jdbcTemplate.query("SELECT * FROM client WHERE id=?", new Object[]{id},
+        return jdbcTemplate.query("SELECT * FROM client WHERE client_id=?", new Object[]{id},
                         new BeanPropertyRowMapper<>(Person.class))
                 .stream().findAny().orElse(null);
     }
 
     public void save(Person person) {
-        jdbcTemplate.update("INSERT INTO client VALUES(1, ?, ?, ?)",
+        jdbcTemplate.update("INSERT INTO client(name, yearBirth, email) VALUES(?, ?, ?)",
                 person.getName(), person.getYearBirth(), person.getEmail());
     }
 
     public void update(int id, Person updatePerson) {
-        jdbcTemplate.update("UPDATE client SET name=?, yearBirth=?, email=? WHERE id=?",
+        jdbcTemplate.update("UPDATE client SET name=?, yearBirth=?, email=? WHERE client_id=?",
                 updatePerson.getName(), updatePerson.getYearBirth(), updatePerson.getEmail(), id);
     }
 
     public void delete(int id) {
-        jdbcTemplate.update("DELETE FROM client WHERE id=?", id);
+        jdbcTemplate.update("DELETE FROM client WHERE client_id=?", id);
     }
 }

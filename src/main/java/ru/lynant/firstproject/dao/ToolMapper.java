@@ -12,7 +12,7 @@ public class ToolMapper implements RowMapper<Tool> {
     public Tool mapRow(ResultSet resultSet, int i) throws SQLException {
         Tool tool = new Tool();
 
-        tool.setId(resultSet.getInt("id"));
+        tool.setTool_id(resultSet.getInt("tool_id"));
         tool.setName(resultSet.getString("name"));
         tool.setBrand(resultSet.getString("brand"));
         tool.setPrice(resultSet.getInt("price"));
