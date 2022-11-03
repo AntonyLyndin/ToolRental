@@ -9,21 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Unimportant changes">
+    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Add display of the list rental tools for the selected person">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/PersonMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Tool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/models/Tool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -203,7 +193,10 @@
       <workItem from="1666790718818" duration="2300000" />
       <workItem from="1666817961210" duration="2065000" />
       <workItem from="1666849028633" duration="2996000" />
-      <workItem from="1666852205721" duration="9032000" />
+      <workItem from="1666852205721" duration="20193000" />
+      <workItem from="1667126583776" duration="19325000" />
+      <workItem from="1667393501849" duration="13000" />
+      <workItem from="1667462450419" duration="1184000" />
     </task>
     <task id="LOCAL-00001" summary="unimportant changes">
       <created>1666596915450</created>
@@ -247,7 +240,28 @@
       <option name="project" value="LOCAL" />
       <updated>1666725181811</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Rename &quot;id&quot; field in models. Add autoincrement &quot;id&quot; fields">
+      <created>1666979376938</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666979376938</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Unimportant changes">
+      <created>1666979410016</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666979410016</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add display of the list rental tools for the selected person">
+      <created>1667463317085</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1667463317085</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +284,9 @@
     <MESSAGE value="INIT" />
     <MESSAGE value="Add JdbcTemplate technology" />
     <MESSAGE value="Transfer DB configuration in external file" />
+    <MESSAGE value="Rename &quot;id&quot; field in models. Add autoincrement &quot;id&quot; fields" />
     <MESSAGE value="Unimportant changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unimportant changes" />
+    <MESSAGE value="Add display of the list rental tools for the selected person" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add display of the list rental tools for the selected person" />
   </component>
 </project>
