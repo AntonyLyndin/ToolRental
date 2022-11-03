@@ -5,8 +5,16 @@
     <title>Person</title>
 </head>
 <body>
-
 <p th:text="${person.name + ', ' + person.yearBirth + ', ' + person.email}">VALUE</p>
+<hr th:if="${not #lists.isEmpty(tools)}"/>
+<!--<p th:text="This person did rent tools" th:if="${#lists.isEmpty(tools)}">noTools</p>-->
+
+<p th:text="Tools + ':'" style="font-weight: bold" th:if="${not #lists.isEmpty(tools)}">tools</p>
+
+
+<div th:each="tool : ${tools}">
+    <a th:text="${tool.name + ', ' + tool.brand + ', ' + tool.price}">client</a>
+</div>
 
 <hr/>
 

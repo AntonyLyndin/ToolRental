@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import ru.lynant.firstproject.dao.PersonDAO;
+import ru.lynant.firstproject.dao.ToolDAO;
 import ru.lynant.firstproject.models.Person;
 
 import javax.validation.Valid;
@@ -15,10 +16,12 @@ import javax.validation.Valid;
 public class PeopleController {
 
     private final PersonDAO personDAO;
+    private final ToolDAO toolDAO;
 
     @Autowired
-    public PeopleController(PersonDAO personDAO) {
+    public PeopleController(PersonDAO personDAO, ToolDAO toolDAO) {
         this.personDAO = personDAO;
+        this.toolDAO = toolDAO;
     }
 
     @GetMapping()
@@ -30,6 +33,8 @@ public class PeopleController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", personDAO.show(id));
+        model.addAttribute("tools", toolDAO.listRentalTool(id));
+        System.out.println(toolDAO.listRentalTool(id).size());
         return "people/show";
     }
 

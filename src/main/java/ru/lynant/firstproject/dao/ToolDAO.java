@@ -41,4 +41,10 @@ public class ToolDAO {
     public void delete(int id) {
         jdbcTemplate.update("DELETE FROM tool WHERE tool_id=?", id);
     }
+
+    public List<Tool> listRentalTool(int id) {
+        return jdbcTemplate.query("SELECT tool.name, brand, price FROM client LEFT JOIN tool " +
+                        "ON client.client_id=tool.client_id WHERE tool.client_id=?",
+                new BeanPropertyRowMapper<>(Tool.class), id);
+    }
 }
