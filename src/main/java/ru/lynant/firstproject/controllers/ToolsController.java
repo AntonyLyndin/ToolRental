@@ -5,7 +5,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import ru.lynant.firstproject.dao.PersonDAO;
 import ru.lynant.firstproject.dao.ToolDAO;
+import ru.lynant.firstproject.models.Person;
 import ru.lynant.firstproject.models.Tool;
 
 import javax.validation.Valid;
@@ -15,10 +17,12 @@ import javax.validation.Valid;
 public class ToolsController {
 
     private final ToolDAO toolDAO;
+    private final PersonDAO personDAO;
 
     @Autowired
-    public ToolsController(ToolDAO toolDAO) {
+    public ToolsController(ToolDAO toolDAO, PersonDAO personDAO) {
         this.toolDAO = toolDAO;
+        this.personDAO = personDAO;
     }
 
     @GetMapping()
@@ -28,8 +32,9 @@ public class ToolsController {
     }
 
     @GetMapping("/{id}")
-    public String show(@PathVariable("id") int id, Model model) {
+    public String show(@PathVariable("id") int id, Model model, @ModelAttribute("person")Person person) {
         model.addAttribute("tool", toolDAO.show(id));
+        model.addAttribute("people", personDAO.list());
         return "tools/show";
     }
 
