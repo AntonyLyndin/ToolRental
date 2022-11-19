@@ -34,7 +34,6 @@ public class PeopleController {
     public String show(@PathVariable("id") int id, Model model) {
         model.addAttribute("person", personDAO.show(id));
         model.addAttribute("tools", toolDAO.listRentalTool(id));
-        System.out.println(toolDAO.listRentalTool(id).size());
         return "people/show";
     }
 

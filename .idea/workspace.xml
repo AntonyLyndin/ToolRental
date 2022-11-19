@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Add display of the list rental tools for the selected person">
+    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Add method DAO for get name rental person">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +43,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2G5k4JriGnqY5YYwnhIdAFxs1H6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -196,7 +201,13 @@
       <workItem from="1666852205721" duration="20193000" />
       <workItem from="1667126583776" duration="19325000" />
       <workItem from="1667393501849" duration="13000" />
-      <workItem from="1667462450419" duration="1184000" />
+      <workItem from="1667462450419" duration="1902000" />
+      <workItem from="1667848165575" duration="115000" />
+      <workItem from="1667848357363" duration="10966000" />
+      <workItem from="1668009458610" duration="2099000" />
+      <workItem from="1668247182099" duration="1670000" />
+      <workItem from="1668264088090" duration="12800000" />
+      <workItem from="1668629322388" duration="21804000" />
     </task>
     <task id="LOCAL-00001" summary="unimportant changes">
       <created>1666596915450</created>
@@ -261,7 +272,28 @@
       <option name="project" value="LOCAL" />
       <updated>1667463317085</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add display of the drop-down list people on tool page">
+      <created>1667463708818</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667463708818</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Configuration changes">
+      <created>1667463743061</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1667463743061</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add method DAO for get name rental person">
+      <created>1668898265121</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668898265121</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +319,9 @@
     <MESSAGE value="Rename &quot;id&quot; field in models. Add autoincrement &quot;id&quot; fields" />
     <MESSAGE value="Unimportant changes" />
     <MESSAGE value="Add display of the list rental tools for the selected person" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add display of the list rental tools for the selected person" />
+    <MESSAGE value="Add display of the drop-down list people on tool page" />
+    <MESSAGE value="Configuration changes" />
+    <MESSAGE value="Add method DAO for get name rental person" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add method DAO for get name rental person" />
   </component>
 </project>
