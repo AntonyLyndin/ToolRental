@@ -35,6 +35,7 @@ public class ToolsController {
     public String show(@PathVariable("id") int id, Model model, @ModelAttribute("person")Person person) {
         model.addAttribute("tool", toolDAO.show(id));
         model.addAttribute("people", personDAO.list());
+        model.addAttribute("nameRental", personDAO.nameRental(id));
         return "tools/show";
     }
 
@@ -69,9 +70,23 @@ public class ToolsController {
         return "redirect:/tools";
     }
 
+    @PostMapping("/{id}/addIdPerson")
+    public String addClientID(@PathVariable("id") int id, @ModelAttribute("person") Person person) {
+        System.out.println("Add controller tool");
+        toolDAO.addClientID(id, person.getClient_id());
+        return "redirect:/tools";
+    }
+
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id") int id) {
         toolDAO.delete(id);
+        return "redirect:/tools";
+    }
+
+    @PostMapping("/{id}/deleteIdPerson")
+    public String deleteClientID(@PathVariable("id") int id) {
+        System.out.println("delete controller tool");
+        toolDAO.deleteClientID(id);
         return "redirect:/tools";
     }
 }

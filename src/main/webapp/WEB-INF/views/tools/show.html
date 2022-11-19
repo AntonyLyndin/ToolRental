@@ -10,18 +10,30 @@
 
 <hr/>
 
-<form th:method="GET" th:action="@{/tools/{id}(id=${tool.tool_id})}">
+<form th:method="POST" th:action="@{/tools/{id}/addIdPerson(id=${tool.tool_id})}"
+      th:if="${#lists.isEmpty(nameRental.name)}">
+    <p th:text="'This tools is free'">value</p>
     <label for="person">Chose person:</label>
     <select th:object="${person}" th:field="*{client_id}" id="person">
         <option th:each="person : ${people}" th:value="${person.client_id}"
-                th:text="${person.getName()}"></option>
+                th:text="${person.getName()}">
+        </option>
+
     </select>
 
     <input type="submit" value="To rent out"/>
+    <hr/>
 </form>
 
-<hr/>
-<br/>
+
+<form th:method="POST" th:action="@{/tools/{id}/deleteIdPerson(id=${tool.tool_id})}"
+      th:if="${not #lists.isEmpty(nameRental.name)}">
+    <p th:text="'This tool has: ' + ${nameRental.name}">VALUE</p>
+    <input type="submit" value="Return tool"/>
+    <hr/>
+    <br/>
+</form>
+
 
 <form th:action="@{/tools/{id}/edit(id=${tool.tool_id})}">
     <input type="submit" value="Edit"/>
