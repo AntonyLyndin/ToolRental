@@ -49,16 +49,10 @@ public class ToolDAO {
     }
 
     public void addClientID(int id, int idPerson) {
-        System.out.println("idTool: " + id + ", " + "idPerson: " + idPerson);
         jdbcTemplate.update("UPDATE tool SET client_id=? WHERE tool_id=?", idPerson, id);
     }
 
-//    public int checkPerson(int id) {
-//        return null;
-//    }
-
     public void deleteClientID(int id) {
-        System.out.println("delete clientID:" + id);
         jdbcTemplate.update("UPDATE tool SET client_id=? WHERE tool_id=?",  null, id);
     }
 }

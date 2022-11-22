@@ -72,7 +72,6 @@ public class ToolsController {
 
     @PostMapping("/{id}/addIdPerson")
     public String addClientID(@PathVariable("id") int id, @ModelAttribute("person") Person person) {
-        System.out.println("Add controller tool");
         toolDAO.addClientID(id, person.getClient_id());
         return "redirect:/tools";
     }
@@ -85,7 +84,6 @@ public class ToolsController {
 
     @PostMapping("/{id}/deleteIdPerson")
     public String deleteClientID(@PathVariable("id") int id) {
-        System.out.println("delete controller tool");
         toolDAO.deleteClientID(id);
         return "redirect:/tools";
     }
