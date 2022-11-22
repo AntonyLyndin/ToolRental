@@ -9,14 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Add method DAO for get name rental person">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/833b6c9e-3dea-4c2b-891a-f5f9220934e7/storage_v2/_src_/database/tool_rental.q5Xf6Q/schema/public.abK9xQ.meta" afterDir="false" />
+    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Configuration changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/PeopleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +204,8 @@
       <workItem from="1668009458610" duration="2099000" />
       <workItem from="1668247182099" duration="1670000" />
       <workItem from="1668264088090" duration="12800000" />
-      <workItem from="1668629322388" duration="21804000" />
+      <workItem from="1668629322388" duration="23858000" />
+      <workItem from="1669099882087" duration="1561000" />
     </task>
     <task id="LOCAL-00001" summary="unimportant changes">
       <created>1666596915450</created>
@@ -293,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668898265121</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add function rental and return for tools">
+      <created>1668898377877</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668898377877</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Configuration changes">
+      <created>1668898418430</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668898418430</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,8 +332,9 @@
     <MESSAGE value="Unimportant changes" />
     <MESSAGE value="Add display of the list rental tools for the selected person" />
     <MESSAGE value="Add display of the drop-down list people on tool page" />
-    <MESSAGE value="Configuration changes" />
     <MESSAGE value="Add method DAO for get name rental person" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add method DAO for get name rental person" />
+    <MESSAGE value="Add function rental and return for tools" />
+    <MESSAGE value="Configuration changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration changes" />
   </component>
 </project>
