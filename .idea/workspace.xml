@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Configuration changes">
+    <list default="true" id="14af98fe-ef84-4470-b8da-ad548a5623f8" name="Changes" comment="Change configuration file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/controllers/ToolsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/lynant/firstproject/dao/ToolDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/tools/list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +204,8 @@
       <workItem from="1668247182099" duration="1670000" />
       <workItem from="1668264088090" duration="12800000" />
       <workItem from="1668629322388" duration="23858000" />
-      <workItem from="1669099882087" duration="1561000" />
+      <workItem from="1669099882087" duration="3851000" />
+      <workItem from="1669360968639" duration="2494000" />
     </task>
     <task id="LOCAL-00001" summary="unimportant changes">
       <created>1666596915450</created>
@@ -305,7 +305,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668898418430</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add status free tool">
+      <created>1669101877327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669101877327</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Delete out string in console">
+      <created>1669101904353</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669101904353</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Change configuration file">
+      <created>1669101950516</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1669101950516</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,6 +356,9 @@
     <MESSAGE value="Add method DAO for get name rental person" />
     <MESSAGE value="Add function rental and return for tools" />
     <MESSAGE value="Configuration changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration changes" />
+    <MESSAGE value="Add status free tool" />
+    <MESSAGE value="Delete out string in console" />
+    <MESSAGE value="Change configuration file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change configuration file" />
   </component>
 </project>
